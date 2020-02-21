@@ -21,7 +21,7 @@ const localesMess = require("locales-message");
  * @param {string} range: range cell in sheet excel (A2:D)
  * @param {string} pathFolder: path folder to store json message file (/locales)
  **/
-localesMess.genMess(sheetId, range, pathFolder);
+localesMess.genMessage(sheetId, range, pathFolder);
 ```
 
 And run:
