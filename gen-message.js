@@ -18,15 +18,15 @@ function genMessage(sheetId, range, pathFolder) {
         vi[row[0]] = row[2];
         ja[row[0]] = row[3];
       });
-      fs.writeFile(EN_PATH, JSON.stringify(en, null, 2), error => {
+      fs.writeFile(EN_PATH, JSON.stringify(en, null, 2) + "\n", error => {
         if (error) return console.error(error);
         console.log("Message stored to", EN_PATH);
       });
-      fs.writeFile(VI_PATH, JSON.stringify(vi, null, 2), error => {
+      fs.writeFile(VI_PATH, JSON.stringify(vi, null, 2) + "\n", error => {
         if (error) return console.error(error);
         console.log("Message stored to", VI_PATH);
       });
-      fs.writeFile(JA_PATH, JSON.stringify(ja, null, 2), error => {
+      fs.writeFile(JA_PATH, JSON.stringify(ja, null, 2) + "\n", error => {
         if (error) return console.error(error);
         console.log("Message stored to", JA_PATH);
       });
