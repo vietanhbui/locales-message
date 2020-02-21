@@ -13,7 +13,7 @@ $ npm i --save locales-message
 ## Usage
 
 ```js
-// in test.js file
+// in gen-message.js file
 const localesMess = require("locales-message");
 
 /**
@@ -22,4 +22,10 @@ const localesMess = require("locales-message");
  * @param {string} pathFolder: path folder to store json message file (/locales)
  **/
 localesMess.genMess(sheetId, range, pathFolder);
+```
+
+And run:
+
+```shell
+$ node gen-message
 ```
